@@ -704,7 +704,7 @@
                 <div class="hud-metrics">
                     <div class="metric-box">
                         <div class="metric-label">LDV Correlation Err</div>
-                        <div class="metric-value">1.8%</div>
+                        <div class="metric-value">3.98%</div>
                     </div>
                     <div class="metric-box">
                         <div class="metric-label">Cavitation Margin</div>
@@ -781,22 +781,22 @@
                 <span class="card-link" onclick="openModal('mdrs-rag')">Read Technical Brief ➔</span>
             </div>
 
-            <!-- CubeSat Vibrational -->
+            <!-- CubeSat Vibrational Research & Publication -->
             <div class="project-card" data-category="structures spaceflight">
                 <div>
-                    <div class="project-type">Structural Dynamics & Modal FEA</div>
-                    <h3 class="project-title">CubeSat Vibrational Structural Health</h3>
+                    <div class="project-type">Research Paper & Modal Validation</div>
+                    <h3 class="project-title">Vibrational Structural Health Monitoring of CubeSats</h3>
                     <p class="project-desc">
-                        Acoustic modal FEA, progressive material damage modeling under severe launch vibrations, and Laser Doppler Vibrometry (LDV) experimental correlation (JPUR Published).
+                        COMSOL eigenfrequency FEA, parametric 1-35mm damage sweeps, and experimental Laser Doppler Vibrometry (LDV) validating remote structural health monitoring feasibility.
                     </p>
                     <div class="project-tags">
-                        <span class="tag">FEA Modal</span>
+                        <span class="tag">COMSOL FEA</span>
                         <span class="tag">LDV Testing</span>
-                        <span class="tag">Harmonic FRF</span>
-                        <span class="tag">JPUR Publication</span>
+                        <span class="tag">Modal Analysis</span>
+                        <span class="tag">SolidWorks</span>
                     </div>
                 </div>
-                <span class="card-link" onclick="openModal('cubesat')">Read Technical Brief ➔</span>
+                <span class="card-link" onclick="openModal('cubesat')">Read Technical Paper Brief ➔</span>
             </div>
 
             <!-- PURPL Turbopump -->
@@ -925,9 +925,10 @@
                     <span class="timeline-date">West Lafayette, IN | January 2026 – May 2026</span>
                 </div>
                 <ul class="timeline-bullets">
-                    <li>Constructed finite element models to predict structural dynamics, modal response, and progressive material failure under extreme flight vibration and acoustic loading environments.</li>
-                    <li>Performed modal, harmonic, and frequency-response function (FRF) analyses to characterize dynamic structural behavior and identify critical resonance modes.</li>
-                    <li>Fabricated flight-representative chassis hardware and executed experimental modal testing using Laser Doppler Vibrometry (LDV) to validate numerical simulation accuracy.</li>
+                    <li>Co-authored original research evaluating model-based vibrational analysis for remote structural health monitoring of 1U CubeSats.</li>
+                    <li>Constructed 3.175mm wall thickness Al 6061-T6 finite element models in COMSOL and performed mesh convergence studies (71,703 DOFs) to predict eigenfrequency shifts.</li>
+                    <li>Fabricated flight-representative 1U chassis hardware adhering to Cal Poly standards and conducted physical tap testing using Laser Doppler Vibrometry (LDV).</li>
+                    <li>Analyzed the dynamic impact of fastener torque variation and mechanical joint compliance between theoretical FEA models and physical structural assemblies.</li>
                 </ul>
             </div>
 
@@ -938,7 +939,7 @@
                         <span class="timeline-role">Responsible Engineer for Pumps Team</span> — 
                         <span class="timeline-company">Purdue Undergraduate Rocket Propulsion Lab</span>
                     </div>
-                    <span class="timeline-date">West Lafayette, IN | August 2024 – January 2026</span>
+                    <span class="timeline-date">August 2024 – January 2026</span>
                 </div>
                 <ul class="timeline-bullets">
                     <li>Led CAD modeling, impeller sizing, and volute design for LOX and RP-1 turbopump components using Siemens NX, SolidWorks, and CFTurbo on Purdue's first student-built turbopump.</li>
@@ -976,12 +977,12 @@
             <div class="skill-group">
                 <div class="skill-title">⚙️ FEA & Structural Analysis</div>
                 <div class="skill-list">
+                    <span class="tag">COMSOL Multiphysics</span>
                     <span class="tag">Nastran</span>
                     <span class="tag">HyperMesh</span>
                     <span class="tag">Patran</span>
                     <span class="tag">Femap</span>
                     <span class="tag">Ansys FEA</span>
-                    <span class="tag">IFEM</span>
                     <span class="tag">Modal Analysis</span>
                 </div>
             </div>
@@ -1012,8 +1013,8 @@
             <div class="skill-group">
                 <div class="skill-title">🛠️ CAD, Design & Testing</div>
                 <div class="skill-list">
-                    <span class="tag">Siemens NX</span>
                     <span class="tag">SolidWorks</span>
+                    <span class="tag">Siemens NX</span>
                     <span class="tag">Fusion 360</span>
                     <span class="tag">GD&T</span>
                     <span class="tag">Laser Doppler Vibrometry (LDV)</span>
@@ -1074,16 +1075,19 @@
                 </p>
             `,
             'cubesat': `
-                <div class="project-type">Structural Dynamics & Modal FEA</div>
-                <h2 style="color: var(--accent-cyan); margin-bottom: 1rem;">CubeSat Vibrational Structural Health</h2>
+                <div class="project-type">Research Paper Brief • Co-Authors: K. Calland, A. Gustafsson, D. Jakel</div>
+                <h2 style="color: var(--accent-cyan); margin-bottom: 1rem;">Vibrational Structural Health Monitoring of CubeSats</h2>
                 <p style="color: var(--text-muted); margin-bottom: 1rem;">
-                    <strong>Overview:</strong> Predictive finite element modeling of structural dynamics, modal response, and progressive material failure under launch vibration and acoustic environments. Published in the <em>Journal of Purdue Undergraduate Research (JPUR)</em>.
+                    <strong>Research Question:</strong> Investigated whether model-based vibrational analysis can serve as a viable remote structural health monitoring tool for detecting damage in deployed satellite structures without physical inspection.
                 </p>
                 <p style="color: var(--text-muted); margin-bottom: 1rem;">
-                    <strong>FEA & Dynamics:</strong> Conducted modal, harmonic, and frequency-response function (FRF) analyses to characterize dynamic structural behavior, isolating critical resonance modes under random vibration profiles.
+                    <strong>FEA Modeling (COMSOL):</strong> Modeled a 1U CubeSat chassis (Al 6061-T6, 3.175mm wall thickness) under free-free boundary conditions. Conducted a mesh convergence study (optimal at 71,703 DOFs) and performed a parametric damage sweep (hole radius 1 to 35 mm), isolating a 30 mm hole as a target ~20 Hz shift across the first 3 modes (Mode 1: 527.01 Hz, Mode 2: 573.09 Hz, Mode 3: 792.82 Hz).
+                </p>
+                <p style="color: var(--text-muted); margin-bottom: 1rem;">
+                    <strong>Experimental LDV Testing:</strong> Suspended the machined physical chassis using fishing line to simulate free-free boundary conditions. Excitation was delivered via an impact hammer across a 25-node grid mapped with retroreflective tape, scanned by a Polytec Laser Doppler Vibrometer (LDV) to record FRFs.
                 </p>
                 <p style="color: var(--text-muted);">
-                    <strong>Experimental Validation:</strong> Built flight-representative chassis hardware and conducted physical modal testing using Laser Doppler Vibrometry (LDV) to correlate numerical simulation accuracy with physical test data.
+                    <strong>Key Technical Findings:</strong> Baseline undamaged Mode 3 FEA vs. experimental showed strong correlation (792.82 Hz vs. 761.3 Hz, 3.98% error). However, damage testing revealed that bolt torque variation and joint assembly compliance significantly influence resonant frequency shifts over structural damage alone, highlighting the critical need for higher-fidelity joint modeling in spaceflight health monitoring.
                 </p>
             `,
             'purpl': `
